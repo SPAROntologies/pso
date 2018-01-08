@@ -43,10 +43,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
       },
       {
-        "@id": "http://xmlns.com/foaf/0.1/Agent"
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
       }
     ]
   },
@@ -119,28 +119,10 @@
     ]
   },
   {
-    "@id": "_:N5646f44a6e9749c7b71a2867b76bd454",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
-          },
-          {
-            "@id": "_:N681020230cf349ffb5e2ef8c08fd8cda"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "@id": "http://purl.org/spar/pso/green-open-access",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/PublicationStatus"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -152,22 +134,6 @@
       {
         "@language": "en",
         "@value": "green open access"
-      }
-    ]
-  },
-  {
-    "@id": "_:N5012ab96ad1a4664bc039b153c2578bf",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/atTime"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
       }
     ]
   },
@@ -191,18 +157,21 @@
     ]
   },
   {
-    "@id": "_:N681020230cf349ffb5e2ef8c08fd8cda",
+    "@id": "http://purl.org/spar/pso/APC-partially-waived",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/pso/ArticleProcessingChargeStatus"
     ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+        "@language": "en",
+        "@value": "The status of an article for which payment of the article processing charge has been partially waived by the publisher."
       }
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate"
+        "@language": "en",
+        "@value": "APC partially waived"
       }
     ]
   },
@@ -269,30 +238,30 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
+        "@id": "_:N8421e3f28dd046af83c6ff4ae516aa20"
+      },
+      {
+        "@id": "_:N7e386ade79e94afab465c081b79f7a60"
+      },
+      {
+        "@id": "_:N118423086a304f46ba63a36d2c2cad35"
+      },
+      {
+        "@id": "_:Nea5fcd4053f34f96bec8dbcd2887e141"
+      },
+      {
         "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
       },
       {
-        "@id": "_:Nfc8af517b255456a82288135f0003311"
-      },
-      {
-        "@id": "_:N5012ab96ad1a4664bc039b153c2578bf"
-      },
-      {
-        "@id": "_:Necc1f019259b406191bbb0e8bce4d84c"
-      },
-      {
-        "@id": "_:Nf4fb0f1bd5b3484ea263f5c26fe10fbd"
-      },
-      {
-        "@id": "_:N8832daea68e14143bf11d502203861a3"
+        "@id": "_:Na2f7cc0cdd90422786605833c2e2de61"
       }
     ]
   },
   {
     "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -308,27 +277,10 @@
     ]
   },
   {
-    "@id": "_:Nfc8af517b255456a82288135f0003311",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#cardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/spar/pso/isStatusHeldBy"
-      }
-    ]
-  },
-  {
     "@id": "http://purl.org/spar/pso/intermediate-draft",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/PublicationStatus"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -365,8 +317,8 @@
   {
     "@id": "http://purl.org/spar/pso/catalogued",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/PublicationStatus"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -382,10 +334,27 @@
     ]
   },
   {
+    "@id": "_:Nea5fcd4053f34f96bec8dbcd2887e141",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/pso/isStatusHeldBy"
+      }
+    ]
+  },
+  {
     "@id": "http://purl.org/spar/pso/libre-open-access",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/PublicationStatus"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -428,8 +397,8 @@
   {
     "@id": "http://purl.org/spar/pso/APC-not-required",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/ArticleProcessingChargeStatus"
+      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -501,6 +470,22 @@
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8421e3f28dd046af83c6ff4ae516aa20",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N571e1860450c494bb7664b55898d9fd8"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/atTime"
       }
     ]
   },
@@ -590,8 +575,8 @@
   {
     "@id": "http://purl.org/spar/pso/peer-reviewed",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/PublicationStatus"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -633,8 +618,8 @@
   {
     "@id": "http://purl.org/spar/pso/APC-fully-waived",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/ArticleProcessingChargeStatus"
+      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -652,8 +637,8 @@
   {
     "@id": "http://purl.org/spar/pso/anonymized",
     "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/pso/PublicationStatus"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -677,8 +662,8 @@
   {
     "@id": "http://purl.org/spar/pso/APC-paid",
     "@type": [
-      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/pso/ArticleProcessingChargeStatus"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -694,10 +679,26 @@
     ]
   },
   {
+    "@id": "_:N118423086a304f46ba63a36d2c2cad35",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/pso/isAcquiredAsConsequenceOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
+      }
+    ]
+  },
+  {
     "@id": "http://purl.org/spar/pso/open-access",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/PublicationStatus"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -769,6 +770,24 @@
     ]
   },
   {
+    "@id": "_:N571e1860450c494bb7664b55898d9fd8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+          },
+          {
+            "@id": "_:N9c40a922ff2847b3bd29cc83c431f78d"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
@@ -777,8 +796,8 @@
   {
     "@id": "http://purl.org/spar/pso/version-of-record",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/PublicationStatus"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -816,6 +835,22 @@
     "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "_:N7e386ade79e94afab465c081b79f7a60",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/atTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+      }
     ]
   },
   {
@@ -858,10 +893,10 @@
     ],
     "http://purl.org/dc/elements/1.1/creator": [
       {
-        "@value": "Silvio Peroni"
+        "@value": "David Shotton"
       },
       {
-        "@value": "David Shotton"
+        "@value": "Silvio Peroni"
       }
     ],
     "http://purl.org/dc/elements/1.1/date": [
@@ -881,7 +916,7 @@
     "http://purl.org/dc/elements/1.1/rights": [
       {
         "@language": "en",
-        "@value": "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."
+        "@value": "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)."
       }
     ],
     "http://purl.org/dc/elements/1.1/title": [
@@ -893,7 +928,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "PSO, the Publishing Status Ontology, is an ontology for describing the status held by a bibliographic document or other publication entity at each of the various stages in the publishing process.  It forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies.  Other SPAR ontologies are described at http://purl.org/spar/."
+        "@value": "The Publishing Status Ontology (PSO) is an ontology designed to characterise the publication status of documents at each stage of the publishing process (draft, submitted, under review, etc.).\n\n**URL:** http://purl.org/spar/pso\n\n**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)\n\n**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)\n\n**Website:** http://www.sparontologies.net/ontologies/pso\n\n**Cite as:** Peroni, S., Shotton, D., Vitali, F. (2012). Scholarly publishing and the Linked Data: describing roles, statuses, temporal and contextual extents. In Proceedings of the 8th International Conference on Semantic Systems (i-Semantics 2012): 9-16. DOI: https://doi.org/10.1145/2362499.2362502. Open Access at: http://speroni.web.cs.unibo.it/publications/peroni-2012-scholarly-publishing-linked.pdf"
       }
     ],
     "http://www.w3.org/2002/07/owl#imports": [
@@ -901,10 +936,10 @@
         "@id": "http://purl.org/swan/2.0/foaf-essential/"
       },
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl"
+        "@id": "http://www.essepuntato.it/2012/04/tvc"
       },
       {
-        "@id": "http://www.essepuntato.it/2012/04/tvc"
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl"
       }
     ],
     "http://www.w3.org/2002/07/owl#priorVersion": [
@@ -938,8 +973,8 @@
   {
     "@id": "http://purl.org/spar/pso/accepted-for-publication",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/PublicationStatus"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -1033,6 +1068,22 @@
     ]
   },
   {
+    "@id": "_:Na2f7cc0cdd90422786605833c2e2de61",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/pso/withStatus"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/pso/Status"
+      }
+    ]
+  },
+  {
     "@id": "http://purl.org/spar/pso/holdsStatusInTime",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -1076,25 +1127,6 @@
       {
         "@language": "en",
         "@value": "withdrawn from submission"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/APC-partially-waived",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/ArticleProcessingChargeStatus"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The status of an article for which payment of the article processing charge has been partially waived by the publisher."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "APC partially waived"
       }
     ]
   },
@@ -1259,22 +1291,6 @@
     ]
   },
   {
-    "@id": "_:Necc1f019259b406191bbb0e8bce4d84c",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/spar/pso/isAcquiredAsConsequenceOf"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
-      }
-    ]
-  },
-  {
     "@id": "http://purl.org/spar/pso/corrected",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
@@ -1296,8 +1312,8 @@
   {
     "@id": "http://purl.org/spar/pso/confidential",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/PublicationStatus"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -1375,22 +1391,6 @@
     "http://www.w3.org/2002/07/owl#inverseOf": [
       {
         "@id": "http://purl.org/spar/pso/isLostAsConsequenceOf"
-      }
-    ]
-  },
-  {
-    "@id": "_:Nf4fb0f1bd5b3484ea263f5c26fe10fbd",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "_:N5646f44a6e9749c7b71a2867b76bd454"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/atTime"
       }
     ]
   },
@@ -1483,8 +1483,8 @@
   {
     "@id": "http://purl.org/spar/pso/copy-edited",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/PublicationStatus"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -1502,8 +1502,8 @@
   {
     "@id": "http://purl.org/spar/pso/published",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/pso/PublicationStatus"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -1547,25 +1547,25 @@
     ]
   },
   {
-    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "_:N8832daea68e14143bf11d502203861a3",
+    "@id": "_:N9c40a922ff2847b3bd29cc83c431f78d",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "http://purl.org/spar/pso/withStatus"
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/spar/pso/Status"
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate"
       }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   }
 ]

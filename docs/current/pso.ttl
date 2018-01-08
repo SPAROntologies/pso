@@ -33,9 +33,19 @@ dc:title a owl:AnnotationProperty .
 
 Because it is based on the Time-indexed Value in Context ontology pattern (http://www.essepuntato.it/2012/04/tvc), it is easy to extends the set of specified statuses, simply by adding new individual to the class pso:Status or its sub-class pso:PublicationStatus.
 """@en ;
-    dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."@en ;
+    dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)."@en ;
     dc:title "PSO, the Publishing Status Ontology"@en ;
-    rdfs:comment "PSO, the Publishing Status Ontology, is an ontology for describing the status held by a bibliographic document or other publication entity at each of the various stages in the publishing process.  It forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies.  Other SPAR ontologies are described at http://purl.org/spar/."@en ;
+    rdfs:comment """The Publishing Status Ontology (PSO) is an ontology designed to characterise the publication status of documents at each stage of the publishing process (draft, submitted, under review, etc.).
+
+**URL:** http://purl.org/spar/pso
+
+**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/pso
+
+**Cite as:** Peroni, S., Shotton, D., Vitali, F. (2012). Scholarly publishing and the Linked Data: describing roles, statuses, temporal and contextual extents. In Proceedings of the 8th International Conference on Semantic Systems (i-Semantics 2012): 9-16. DOI: https://doi.org/10.1145/2362499.2362502. Open Access at: http://speroni.web.cs.unibo.it/publications/peroni-2012-scholarly-publishing-linked.pdf"""@en ;
     owl:imports <http://purl.org/swan/2.0/foaf-essential/>,
         <http://www.essepuntato.it/2012/04/tvc>,
         <http://www.ontologydesignpatterns.org/cp/owl/participation.owl> ;
@@ -381,20 +391,20 @@ tisit:hasTimeIndexedSetting a owl:ObjectProperty .
 - a particular event that causes the acquisition of S by D"""@en ;
     rdfs:comment "A particular situation that describe a state or condition some documents may have at a particular time as consequence of one or more events."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty tvc:atTime ;
-            owl:someValuesFrom ti:TimeInterval ],
-        [ a owl:Restriction ;
-            owl:onProperty :withStatus ;
-            owl:someValuesFrom :Status ],
-        [ a owl:Restriction ;
             owl:onProperty :isAcquiredAsConsequenceOf ;
             owl:someValuesFrom part:Event ],
+        [ a owl:Restriction ;
+            owl:onProperty tvc:atTime ;
+            owl:someValuesFrom ti:TimeInterval ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( ti:TimeInterval [ a owl:Restriction ;
                                 owl:allValuesFrom xsd:dateTime ;
                                 owl:onProperty ti:hasIntervalDate ] ) ] ;
             owl:onProperty tvc:atTime ],
+        [ a owl:Restriction ;
+            owl:onProperty :withStatus ;
+            owl:someValuesFrom :Status ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty :isStatusHeldBy ],
