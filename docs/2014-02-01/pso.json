@@ -907,7 +907,7 @@
     "http://purl.org/dc/elements/1.1/description": [
       {
         "@language": "en",
-        "@value": "PSO, the Publishing Status Ontology, is an ontology written in OWL 2 DL for characterizing the publication status of a document or other publication entity at each of the various stages in the publishing process (e.g.  draft, submitted, under review, rejected, accepted for publication, proof, published, Version of Record, catalogued, archived).\n\nBecause it is based on the Time-indexed Value in Context ontology pattern (http://www.essepuntato.it/2012/04/tvc), it is easy to extends the set of specified statuses, simply by adding new individual to the class pso:Status or its sub-class pso:PublicationStatus.\n"
+        "@value": "PSO, the Publishing Status Ontology, is an ontology written in OWL 2 DL for characterizing the publication status of a document or other publication entity at each of the various stages in the publishing process (e.g.  draft, submitted, under review, rejected, accepted for publication, proof, published, Version of Record, catalogued, archived).\n\nBecause it is based on the Time-indexed Value in Context ontology pattern (http://purl.org/spar/tvc), it is easy to extends the set of specified statuses, simply by adding new individual to the class pso:Status or its sub-class pso:PublicationStatus.\n"
       },
       {
         "@id": "http://purl.org/spar/pso/pso.png"
@@ -933,10 +933,10 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "http://purl.org/swan/2.0/foaf-essential/"
+        "@id": "http://purl.org/spar/foaf"
       },
       {
-        "@id": "http://www.essepuntato.it/2012/04/tvc"
+        "@id": "http://purl.org/spar/tvc"
       },
       {
         "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl"

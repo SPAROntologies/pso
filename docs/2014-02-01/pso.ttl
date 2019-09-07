@@ -31,7 +31,7 @@ dc:title a owl:AnnotationProperty .
     dc:description :pso.png,
         """PSO, the Publishing Status Ontology, is an ontology written in OWL 2 DL for characterizing the publication status of a document or other publication entity at each of the various stages in the publishing process (e.g.  draft, submitted, under review, rejected, accepted for publication, proof, published, Version of Record, catalogued, archived).
 
-Because it is based on the Time-indexed Value in Context ontology pattern (http://www.essepuntato.it/2012/04/tvc), it is easy to extends the set of specified statuses, simply by adding new individual to the class pso:Status or its sub-class pso:PublicationStatus.
+Because it is based on the Time-indexed Value in Context ontology pattern (http://purl.org/spar/tvc), it is easy to extends the set of specified statuses, simply by adding new individual to the class pso:Status or its sub-class pso:PublicationStatus.
 """@en ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)."@en ;
     dc:title "PSO, the Publishing Status Ontology"@en ;
@@ -46,8 +46,8 @@ Because it is based on the Time-indexed Value in Context ontology pattern (http:
 **Website:** http://www.sparontologies.net/ontologies/pso
 
 **Cite as:** Peroni, S., Shotton, D., Vitali, F. (2012). Scholarly publishing and the Linked Data: describing roles, statuses, temporal and contextual extents. In Proceedings of the 8th International Conference on Semantic Systems (i-Semantics 2012): 9-16. DOI: https://doi.org/10.1145/2362499.2362502. Open Access at: http://speroni.web.cs.unibo.it/publications/peroni-2012-scholarly-publishing-linked.pdf"""@en ;
-    owl:imports <http://purl.org/swan/2.0/foaf-essential/>,
-        <http://www.essepuntato.it/2012/04/tvc>,
+    owl:imports <http://purl.org/spar/foaf>,
+        <http://purl.org/spar/tvc>,
         <http://www.ontologydesignpatterns.org/cp/owl/participation.owl> ;
     owl:priorVersion <https://svn.code.sf.net/p/sempublishing/code/PSO/2014-01-31-pso-1_6.owl> ;
     owl:versionIRI <http://purl.org/spar/pso/2014-02-01> ;

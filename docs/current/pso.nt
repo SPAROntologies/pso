@@ -33,7 +33,7 @@ _:N8421e3f28dd046af83c6ff4ae516aa20 <http://www.w3.org/2002/07/owl#onProperty> <
 <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime> <http://www.w3.org/2000/01/rdf-schema#label> "at time"@en .
 <http://purl.org/spar/pso/proof> <http://www.w3.org/2000/01/rdf-schema#label> "proof"@en .
 <http://purl.org/spar/pso/rejected-for-publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/spar/pso> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/swan/2.0/foaf-essential/> .
+<http://purl.org/spar/pso> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/foaf> .
 <http://purl.org/spar/pso/under-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/pso/PublicationStatus> .
 <http://purl.org/spar/pso/green-open-access> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/pso/PublicationStatus> .
 <http://purl.org/spar/pso/open-access> <http://www.w3.org/2000/01/rdf-schema#label> "open access"@en .
@@ -90,7 +90,7 @@ _:N118423086a304f46ba63a36d2c2cad35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/spar/pso/copy-edited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://purl.org/spar/pso> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)."@en .
 <http://purl.org/spar/pso/initial-draft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/pso/PublicationStatus> .
-<http://purl.org/spar/pso> <http://www.w3.org/2002/07/owl#imports> <http://www.essepuntato.it/2012/04/tvc> .
+<http://purl.org/spar/pso> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/tvc> .
 <http://purl.org/spar/pso/unpublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract class defining any kinds of publishing work."@en .
 <http://purl.org/spar/pso/reviewed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -199,7 +199,7 @@ _:N9c40a922ff2847b3bd29cc83c431f78d <http://www.w3.org/2002/07/owl#allValuesFrom
 <http://purl.org/spar/pso/unpublished> <http://www.w3.org/2000/01/rdf-schema#label> "unpublished"@en .
 <http://purl.org/spar/pso/isAcquiredAsConsequenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "is acquired as consequence of"@en .
 <http://purl.org/spar/pso/version-of-record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/spar/pso> <http://purl.org/dc/elements/1.1/description> "PSO, the Publishing Status Ontology, is an ontology written in OWL 2 DL for characterizing the publication status of a document or other publication entity at each of the various stages in the publishing process (e.g.  draft, submitted, under review, rejected, accepted for publication, proof, published, Version of Record, catalogued, archived).\n\nBecause it is based on the Time-indexed Value in Context ontology pattern (http://www.essepuntato.it/2012/04/tvc), it is easy to extends the set of specified statuses, simply by adding new individual to the class pso:Status or its sub-class pso:PublicationStatus.\n"@en .
+<http://purl.org/spar/pso> <http://purl.org/dc/elements/1.1/description> "PSO, the Publishing Status Ontology, is an ontology written in OWL 2 DL for characterizing the publication status of a document or other publication entity at each of the various stages in the publishing process (e.g.  draft, submitted, under review, rejected, accepted for publication, proof, published, Version of Record, catalogued, archived).\n\nBecause it is based on the Time-indexed Value in Context ontology pattern (http://purl.org/spar/tvc), it is easy to extends the set of specified statuses, simply by adding new individual to the class pso:Status or its sub-class pso:PublicationStatus.\n"@en .
 <http://purl.org/spar/pso/isAcquiredAsConsequenceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/spar/pso/non-confidential> <http://www.w3.org/2000/01/rdf-schema#label> "non-confidential"@en .
 <http://purl.org/spar/pso/revised> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/pso/PublicationStatus> .
