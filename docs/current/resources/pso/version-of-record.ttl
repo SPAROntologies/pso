@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+pso:version-of-record a pso:PublicationStatus,
+        owl:NamedIndividual ;
+    rdfs:label "version of record"@en ;
+    vann:example """
+    :my-article
+        pso:holdsStatusInTime :my-article-status .
+
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:version-of-record .
+    """ ;
+    rdfs:comment "The final version of a document that has been formally published as a peer-reviewed journal article, citable via a permanent identifier, and forming an abiding component of the scholarly record." ;
+    rdfs:isDefinedBy pso: ;
+    vs:term_status reg:statusStable .
+

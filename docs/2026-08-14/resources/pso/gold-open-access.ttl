@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+pso:gold-open-access a pso:PublicationStatus,
+        owl:NamedIndividual ;
+    rdfs:label "gold open access"@en ;
+    vann:example """
+    :my-article
+        pso:holdsStatusInTime :my-article-status .
+
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:gold-open-access .
+    """ ;
+    rdfs:comment "The status of a published work, typically a journal article, made available by the publisher on the publisher's own web site for third parties to read without payment of access or subscription fees.  Gold open access has the benefit that the article is findable where you expect it to be, but licensing restrictions may limit the possibilities for downloading, text mining, modification, re-publication or re-use of the published work.  Gold open-access publication typically involves payment by the author or his/her institution to the publisher of an article processing charge (aka an author publishing charge).  [See also: pso:open-access, pso:gratis-open-access, pso:libre-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]" ;
+    rdfs:isDefinedBy pso: ;
+    vs:term_status reg:statusStable .
+

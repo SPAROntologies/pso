@@ -1,0 +1,8 @@
+<http://purl.org/spar/pso/holdsStatusInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a document, a dataset or some other thing and a status that it holds at a specific time."@en .
+<http://purl.org/spar/pso/holdsStatusInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pso/> .
+<http://purl.org/spar/pso/holdsStatusInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/pso/holdsStatusInTime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/pso/holdsStatusInTime> <http://www.w3.org/2000/01/rdf-schema#label> "holds status in time"@en .
+<http://purl.org/spar/pso/holdsStatusInTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2012/04/tvc/hasValue> .
+<http://purl.org/spar/pso/holdsStatusInTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/pso/StatusInTime> .
+<http://purl.org/spar/pso/holdsStatusInTime> <http://purl.org/vocab/vann/example> "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n    " .

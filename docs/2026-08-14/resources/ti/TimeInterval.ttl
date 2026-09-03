@@ -1,0 +1,9 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+
+ti:TimeInterval a owl:Class ;
+    rdfs:label "time interval"@en ;
+    rdfs:comment "Two (starting and ending) points in time that define a particular period of time." ;
+    rdfs:isDefinedBy ti: .
+

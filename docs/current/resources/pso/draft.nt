@@ -1,0 +1,7 @@
+<http://purl.org/spar/pso/draft> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of a work (for example a document or a dataset) prior to completion and publication." .
+<http://purl.org/spar/pso/draft> <http://purl.org/vocab/vann/example> "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:draft .\n    " .
+<http://purl.org/spar/pso/draft> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pso/> .
+<http://purl.org/spar/pso/draft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/pso/PublicationStatus> .
+<http://purl.org/spar/pso/draft> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/pso/draft> <http://www.w3.org/2000/01/rdf-schema#label> "draft"@en .
+<http://purl.org/spar/pso/draft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

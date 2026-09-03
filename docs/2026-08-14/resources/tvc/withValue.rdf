@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2012/04/tvc/withValue">
+    <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/tvc/"/>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The relation between the value in time situation and the actual value held by the entity partaking in that situation.</rdfs:comment>
+    <rdfs:label xml:lang="en">with value</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

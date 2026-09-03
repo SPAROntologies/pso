@@ -1,0 +1,7 @@
+<http://purl.org/spar/pso/Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/pso/Status> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pso/> .
+<http://purl.org/spar/pso/Status> <http://purl.org/vocab/vann/example> "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n\n    pso:corrected a pso:Status .\n    " .
+<http://purl.org/spar/pso/Status> <http://www.w3.org/2000/01/rdf-schema#comment> "A state or condition that a document may have."@en .
+<http://purl.org/spar/pso/Status> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/pso/Status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
+<http://purl.org/spar/pso/Status> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .

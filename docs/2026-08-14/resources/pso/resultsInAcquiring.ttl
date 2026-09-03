@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix tisit: <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+pso:resultsInAcquiring a owl:ObjectProperty ;
+    rdfs:label "results in acquiring"@en ;
+    vann:example """
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:under-review ;
+        tvc:atTime :my-status-time .
+
+    :my-event  
+        pso:resultsInAcquiring :my-article-status .
+    """ ;
+    rdfs:comment "The relation between an event and the consequential acquisition of a particular publishing status."@en ;
+    rdfs:isDefinedBy pso: ;
+    rdfs:subPropertyOf tisit:hasTimeIndexedSetting ;
+    owl:inverseOf pso:isAcquiredAsConsequenceOf ;
+    vs:term_status reg:statusStable .
+

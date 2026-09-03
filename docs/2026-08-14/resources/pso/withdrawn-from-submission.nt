@@ -1,0 +1,7 @@
+<http://purl.org/spar/pso/withdrawn-from-submission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/pso/withdrawn-from-submission> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of a work (for example a pre-publication document or dataset) that has been voluntarily withdrawn by the author, having previously been submitted for publication, perhaps because the revisions requested by the peer-reviewers were considered impossible to achieve, or because the author wishes to submit it for publication elsewhere." .
+<http://purl.org/spar/pso/withdrawn-from-submission> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/pso/withdrawn-from-submission> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pso/> .
+<http://purl.org/spar/pso/withdrawn-from-submission> <http://purl.org/vocab/vann/example> "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:withdrawn-from-submission .\n    " .
+<http://purl.org/spar/pso/withdrawn-from-submission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/pso/PublicationStatus> .
+<http://purl.org/spar/pso/withdrawn-from-submission> <http://www.w3.org/2000/01/rdf-schema#label> "withdrawn from submission"@en .
