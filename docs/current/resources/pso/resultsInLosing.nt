@@ -1,0 +1,8 @@
+<http://purl.org/spar/pso/resultsInLosing> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between an event and the consequential loss of a particular publishing status."@en .
+<http://purl.org/spar/pso/resultsInLosing> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting> .
+<http://purl.org/spar/pso/resultsInLosing> <http://www.w3.org/2000/01/rdf-schema#label> "results in losing"@en .
+<http://purl.org/spar/pso/resultsInLosing> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/pso/isLostAsConsequenceOf> .
+<http://purl.org/spar/pso/resultsInLosing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pso/> .
+<http://purl.org/spar/pso/resultsInLosing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/pso/resultsInLosing> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/pso/resultsInLosing> <http://purl.org/vocab/vann/example> "\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:under-review ;\n        tvc:atTime :my-status-time .\n\n    :my-another-event  \n        pso:resultsInLosing :my-article-status .\n    " .

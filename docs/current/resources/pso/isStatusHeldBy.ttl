@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix tisit: <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+pso:isStatusHeldBy a owl:ObjectProperty ;
+    rdfs:label "is status held by"@en ;
+    vann:example """
+    :my-article
+        pso:holdsStatusInTime :my-article-status .
+
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:corrected .
+    """ ;
+    rdfs:comment "The relation between a status held at a specific time and the document, dataset or other thing holding that status."@en ;
+    rdfs:domain pso:StatusInTime ;
+    rdfs:isDefinedBy pso: ;
+    rdfs:subPropertyOf tisit:forEntity ;
+    owl:inverseOf pso:holdsStatusInTime ;
+    vs:term_status reg:statusStable .
+

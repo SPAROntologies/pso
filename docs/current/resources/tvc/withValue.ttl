@@ -1,0 +1,12 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tisit: <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+
+tvc:withValue a owl:ObjectProperty ;
+    rdfs:label "with value"@en ;
+    rdfs:comment "The relation between the value in time situation and the actual value held by the entity partaking in that situation."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:range tvc:ValueInTime ;
+    rdfs:subPropertyOf tisit:forEntity .
+

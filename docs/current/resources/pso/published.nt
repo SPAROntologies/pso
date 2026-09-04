@@ -1,0 +1,7 @@
+<http://purl.org/spar/pso/published> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/pso/published> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/pso/published> <http://purl.org/vocab/vann/example> "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:published .\n    " .
+<http://purl.org/spar/pso/published> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pso/> .
+<http://purl.org/spar/pso/published> <http://www.w3.org/2000/01/rdf-schema#label> "published"@en .
+<http://purl.org/spar/pso/published> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/pso/PublicationStatus> .
+<http://purl.org/spar/pso/published> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of material (for example a document or a dataset) that has been published, i.e. made available for people to access, read or use, either freely or for a purchase price or an access fee." .

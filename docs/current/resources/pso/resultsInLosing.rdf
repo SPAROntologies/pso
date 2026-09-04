@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/pso/resultsInLosing">
+    <rdfs:comment xml:lang="en">The relation between an event and the consequential loss of a particular publishing status.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"/>
+    <rdfs:label xml:lang="en">results in losing</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <vann:example>
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:under-review ;
+        tvc:atTime :my-status-time .
+
+    :my-another-event  
+        pso:resultsInLosing :my-article-status .
+    </vann:example>
+    <owl:inverseOf rdf:resource="http://purl.org/spar/pso/isLostAsConsequenceOf"/>
+  </rdf:Description>
+</rdf:RDF>

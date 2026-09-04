@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+pso:ArticleProcessingChargeStatus a owl:Class ;
+    rdfs:label "article processing charge status"@en ;
+    vann:example """
+    :my-article
+        pso:holdsStatusInTime :my-article-status .
+
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:APC-fully-waived .
+
+    pso:APC-fully-waived a pso:ArticleProcessingChargeStatus .
+    """ ;
+    rdfs:comment "A state or condition that a document may have that relates to a fee levied by a publisher on an author or an institution to cover the cost of publishing an Open Access journal article."@en ;
+    rdfs:isDefinedBy pso: ;
+    rdfs:subClassOf pso:Status ;
+    vs:term_status reg:statusStable .
+

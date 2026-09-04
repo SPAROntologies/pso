@@ -1,0 +1,7 @@
+<http://purl.org/spar/pso/embargoed> <http://www.w3.org/2000/01/rdf-schema#label> "embargoed"@en .
+<http://purl.org/spar/pso/embargoed> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThe status of a work that is subjected to an embargo, which means that the work cannot be published, or in the case of a press release that it cannot be reported on, until a particular date known as the embargo date. \nFor open-access journal articles, an embargoed article is one in which availability of the open-access version of the article is delayed by the publisher for a substantial embargo period, typically of six or twelve months, after subscription-access availability of the published work.  \n" .
+<http://purl.org/spar/pso/embargoed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/pso/PublicationStatus> .
+<http://purl.org/spar/pso/embargoed> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/pso/embargoed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/pso/embargoed> <http://purl.org/vocab/vann/example> "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:embargoed .\n    " .
+<http://purl.org/spar/pso/embargoed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pso/> .

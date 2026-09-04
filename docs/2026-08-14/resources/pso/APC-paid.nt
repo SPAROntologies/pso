@@ -1,0 +1,7 @@
+<http://purl.org/spar/pso/APC-paid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/pso/ArticleProcessingChargeStatus> .
+<http://purl.org/spar/pso/APC-paid> <http://purl.org/vocab/vann/example> "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-paid .\n    " .
+<http://purl.org/spar/pso/APC-paid> <http://www.w3.org/2000/01/rdf-schema#label> "APC paid"@en .
+<http://purl.org/spar/pso/APC-paid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/pso/APC-paid> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of an article for which the article processing charge has been paid to the publisher by the author or his/her institution."@en .
+<http://purl.org/spar/pso/APC-paid> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/pso/APC-paid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pso/> .
