@@ -28,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://xmlns.com/foaf/0.1/Agent"
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
       },
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
