@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+pso:APC-not-charged a pso:ArticleProcessingChargeStatus,
+        owl:NamedIndividual ;
+    rdfs:label "APC not charged"@en ;
+    vann:example """
+    :my-article
+        pso:holdsStatusInTime :my-article-status .
+
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:APC-not-charged .
+    """ ;
+    rdfs:comment "The status of an article for which an article processing charge is not charged by the publisher."@en ;
+    rdfs:isDefinedBy pso: ;
+    vs:term_status reg:statusStable .
+

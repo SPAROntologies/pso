@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos1="http://www.w3.org/2008/05/skos#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb5">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb7">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pso/StatusInTime">
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
+    <rdfs:subClassOf rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb2"/>
+    <rdfs:subClassOf rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb3"/>
+    <rdfs:subClassOf rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb8"/>
+    <rdfs:subClassOf rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb1"/>
+    <rdfs:subClassOf rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb9"/>
+    <skos1:note xml:lang="en">
+A status in time describes always:
+- a particular status S;
+- a particular document D holding S;
+- a particular time interval T in which D holds S;
+- a particular event that causes the acquisition of S by D.
+</skos1:note>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A particular situation that describe a state or condition some documents may have at a particular time as consequence of one or more events.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">status in time</rdfs:label>
+    <vann:example>
+    :my-article
+        pso:holdsStatusInTime :my-article-status .
+
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:corrected .
+    </vann:example>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb4"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/atTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+    <owl:onProperty rdf:resource="http://purl.org/spar/pso/isAcquiredAsConsequenceOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb6">
+    <rdf:first rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+    <rdf:rest rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb8">
+    <owl:onProperty rdf:resource="http://purl.org/spar/pso/withStatus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/pso/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/spar/pso/isStatusHeldBy"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb2">
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/atTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb4">
+    <owl:intersectionOf rdf:nodeID="n2624ae3ba66f4ed689ae973dbe46982fb6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

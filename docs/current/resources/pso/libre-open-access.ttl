@@ -15,7 +15,7 @@ pso:libre-open-access a pso:PublicationStatus,
     :my-article-status a pso:StatusInTime ;
         pso:withStatus pso:libre-open-access .
     """ ;
-    rdfs:comment "The status of a published work which is both free to read on-line, and to which additional usage rights apply, for example the right to text mine, make derivative works, re-use and re-publish the published work, such rights frequently being defined by application of an explicit license such as a Creative Commons license.  [See also: pso:open-access, pso:gratis-open-access, pso:gold-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]" ;
+    rdfs:comment "The status of a published work which is both free to read on-line, and to which additional usage rights apply, for example the right to text mine, make derivative works, reuse and re-publish the published work, such rights frequently being defined by application of an explicit license such as a Creative Commons license.  [See also: pso:open-access, pso:gratis-open-access, pso:gold-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]" ;
     rdfs:isDefinedBy pso: ;
     vs:term_status reg:statusStable .
 

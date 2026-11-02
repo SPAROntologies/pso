@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+
+ti:hasIntervalDate a owl:DatatypeProperty ;
+    rdfs:label "has interval date"@en ;
+    rdfs:comment "A date value assigned to a time interval."@en ;
+    rdfs:domain ti:TimeInterval ;
+    rdfs:isDefinedBy ti: .
+
