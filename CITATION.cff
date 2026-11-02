@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+title: The Publishing Status Ontology (PSO)
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+- given-names: Silvio
+  family-names: Peroni
+  orcid: 'https://orcid.org/0000-0003-0530-4305'
+- given-names: David
+  family-names: Shotton
+  orcid: 'https://orcid.org/0000-0001-5506-523X'
+identifiers:
+  - type: doi
+    value: 10.25504/FAIRsharing.093230
+repository-code: 'https://github.com/SPAROntologies/pso'
+url: 'http://www.sparontologies.net/ontologies/pso'
+abstract: The Publishing Status Ontology (PSO) is an ontology designed to characterise the publication status of documents at each stage of the publishing process (draft, submitted, under review, etc.).
+keywords:
+- publishing statuses
+- bibliometrics
+- scholarly publishing
+- scientometrics
+- semantic publishing
+license: CC-BY-4.0
+version: 1.8.2
+date-released: '2026-10-05'
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Peroni"
+    given-names: "Silvio"
+    orcid: "https://orcid.org/0000-0003-0530-4305"
+  - family-names: "Shotton"
+    given-names: "David"
+    orcid: "https://orcid.org/0000-0001-5506-523X"
+  - family-names: "Vitali"
+    given-names: "Fabio"
+    orcid: "https://orcid.org/0000-0002-7562-5203"
+  doi: "10.1145/2362499.2362502"
+  collection-title: "Proceedings of the 8th International Conference on Semantic Systems (i-Semantics 2012)"
+  collection-type: "proceedings"
+  editors:
+  - family-names: "Sack"
+    given-names: "H."
+  - family-names: "Pellegrini"
+    given-names: "T."
+  notes: "i-Semantics 2012"
+  title: "Describing bibliographic references in RDF"
+  year: 2012
+  publisher:
+    name: "Association for Computing Machinery"
+    city: "New York"
+    country: "USA"
