@@ -4,10 +4,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="en">has time indexed setting</rdfs:label>
     <rdfs:comment xml:lang="en">The relation between an entity and a time-indexed situation it is involved in.</rdfs:comment>
-    <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"/>
+    <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"/>
   </rdf:Description>
 </rdf:RDF>

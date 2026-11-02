@@ -6,11 +6,11 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/pso/under-review">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
     <rdfs:comment>The status of a document that has been received from the author(s) by an editor or a publisher for potential publication, and then has been sent to independent reviewers for their comments as to its suitability for publication, prior to receipt of such reviews.</rdfs:comment>
     <rdfs:label xml:lang="en">under review</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso/"/>
     <vann:example>
     :my-article
         pso:holdsStatusInTime :my-article-status .
