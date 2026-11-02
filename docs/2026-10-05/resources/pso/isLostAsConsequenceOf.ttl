@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix part: <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+pso:isLostAsConsequenceOf a owl:ObjectProperty ;
+    rdfs:label "is lost as consequence of"@en ;
+    vann:example """
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:under-review ;
+        tvc:atTime :my-status-time ;
+        pso:isLostAsConsequenceOf :my-another-event .
+    """ ;
+    rdfs:comment "The relation between a particular publishing status and the event that causes its loss."@en ;
+    rdfs:domain pso:StatusInTime ;
+    rdfs:isDefinedBy pso: ;
+    rdfs:range part:Event ;
+    rdfs:subPropertyOf tvc:withinContext ;
+    vs:term_status reg:statusStable .
+
