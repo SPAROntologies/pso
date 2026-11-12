@@ -17,7 +17,7 @@ pso:isStatusIn a owl:ObjectProperty ;
     :my-article-status a pso:StatusInTime .
     """ ;
     rdfs:comment "The relation between the definition of a specific status and the situation of the document, a dataset or something else holding that status at a specific time."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     rdfs:range pso:StatusInTime ;
     rdfs:subPropertyOf tisit:hasTimeIndexedSetting ;
     owl:inverseOf pso:withStatus ;

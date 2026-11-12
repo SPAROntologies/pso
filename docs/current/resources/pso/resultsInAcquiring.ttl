@@ -17,7 +17,7 @@ pso:resultsInAcquiring a owl:ObjectProperty ;
         pso:resultsInAcquiring :my-article-status .
     """ ;
     rdfs:comment "The relation between an event and the consequential acquisition of a particular publishing status."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     rdfs:subPropertyOf tisit:hasTimeIndexedSetting ;
     owl:inverseOf pso:isAcquiredAsConsequenceOf ;
     vs:term_status reg:statusStable .

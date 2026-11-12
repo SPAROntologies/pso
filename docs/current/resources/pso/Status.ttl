@@ -17,7 +17,7 @@ pso:Status a owl:Class ;
     pso:corrected a pso:Status .
     """ ;
     rdfs:comment "A state or condition that a document may have."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     rdfs:subClassOf owl:Thing ;
     vs:term_status reg:statusStable .
 

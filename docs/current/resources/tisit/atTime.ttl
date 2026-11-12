@@ -6,5 +6,5 @@ tisit:atTime a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "at time"@en ;
     rdfs:comment "A time interval during which something is happening." ;
-    rdfs:isDefinedBy tisit: .
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> .
 

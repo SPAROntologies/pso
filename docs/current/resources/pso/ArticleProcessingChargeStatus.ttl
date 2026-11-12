@@ -17,7 +17,7 @@ pso:ArticleProcessingChargeStatus a owl:Class ;
     pso:APC-fully-waived a pso:ArticleProcessingChargeStatus .
     """ ;
     rdfs:comment "A state or condition that a document may have that relates to a fee levied by a publisher on an author or an institution to cover the cost of publishing an Open Access journal article."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     rdfs:subClassOf pso:Status ;
     vs:term_status reg:statusStable .
 

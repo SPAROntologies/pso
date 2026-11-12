@@ -17,7 +17,7 @@ pso:Agent a owl:Class ;
         foaf:name 'John Doe' .
     """ ;
     rdfs:comment "An entity, such as a person, a group, an organization or a software agent, involved in one or more events."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     rdfs:subClassOf part:Object,
         foaf:Agent ;
     vs:term_status reg:statusStable .

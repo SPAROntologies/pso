@@ -1,8 +1,8 @@
 version = 1
-revision = 2
+revision = 5
 requires-python = ">=3.13"
 
 [[package]]
 name = "pso"
-version = "1.8.2"
+version = "1.8.3"
 source = { virtual = "." }

@@ -16,6 +16,6 @@ pso:APC-paid a pso:ArticleProcessingChargeStatus,
         pso:withStatus pso:APC-paid .
     """ ;
     rdfs:comment "The status of an article for which the article processing charge has been paid to the publisher by the author or his/her institution."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

@@ -7,6 +7,6 @@ tvc:withinContext a owl:ObjectProperty ;
     rdfs:label "within context"@en ;
     rdfs:comment "The specific context within which the fact of the entity having the value is relevant."@en ;
     rdfs:domain tvc:ValueInTime ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> ;
     rdfs:subPropertyOf tisit:forEntity .
 

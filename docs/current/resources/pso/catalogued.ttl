@@ -16,6 +16,6 @@ pso:catalogued a pso:PublicationStatus,
         pso:withStatus pso:catalogued .
     """ ;
     rdfs:comment "The status of a work (for example a document or a dataset) concerning which metadata has been stored in a physical or electronic catalogue." ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

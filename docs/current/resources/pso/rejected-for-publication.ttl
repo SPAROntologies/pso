@@ -16,6 +16,6 @@ pso:rejected-for-publication a pso:PublicationStatus,
         pso:withStatus pso:rejected-for-publication .
     """ ;
     rdfs:comment "The status of material (for example a document or a dataset) after it has been rejected for publication by a publisher or data repository." ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

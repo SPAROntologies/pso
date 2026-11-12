@@ -6,5 +6,5 @@ tisit:forEntity a owl:ObjectProperty ;
     rdfs:label "for entity"@en ;
     rdfs:comment "The relation between a time-indexed situation and an entity involved in it."@en ;
     rdfs:domain tisit:TimeIndexedSituation ;
-    rdfs:isDefinedBy tisit: .
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> .
 

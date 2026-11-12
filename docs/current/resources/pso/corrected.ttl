@@ -16,6 +16,6 @@ pso:corrected a pso:PublicationStatus,
         pso:withStatus pso:corrected .
     """ ;
     rdfs:comment "The status of a work (for example a document or a dataset) in which errors, that may have introduced by the author, by a publisher, or by some automated process, have been corrected." ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

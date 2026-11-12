@@ -11,7 +11,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [

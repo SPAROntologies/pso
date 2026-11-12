@@ -16,6 +16,6 @@ pso:revised a pso:PublicationStatus,
         pso:withStatus pso:revised .
     """ ;
     rdfs:comment "The status of s work (for example a document or a dataset) that has been altered or improved, typically by the original author." ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

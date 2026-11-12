@@ -16,7 +16,7 @@ pso:proof a pso:PublicationStatus,
         pso:withStatus pso:proof .
     """ ;
     rdfs:comment "The status of a pre-publication document late in the publication process, once it has been accepted for publication by a publisher, after the inclusion of any author corrections required by the editor following peer-review, following copy editing and formatting to bring the manuscript into the house style, and prior to final checking by the editor, proof-reader and author to detect and eliminate any errors prior to publication."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     rdfs:seeAlso pso:corrected ;
     vs:term_status reg:statusStable .
 

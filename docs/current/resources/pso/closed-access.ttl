@@ -16,6 +16,6 @@ pso:closed-access a pso:PublicationStatus,
         pso:withStatus pso:closed-access .
     """ ;
     rdfs:comment "The status of a work (typically a private or secret paper or a confidential dataset) that is typically held unpublished in a 'dark' archive whose existence is unknown by the wider world, and that is only available to the owner or copyright holder of the asset." ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

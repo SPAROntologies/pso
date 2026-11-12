@@ -16,6 +16,6 @@ pso:confidential a pso:PublicationStatus,
         pso:withStatus pso:confidential .
     """ ;
     rdfs:comment "The status of a document containing information that must be kept confidential." ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

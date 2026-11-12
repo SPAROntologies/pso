@@ -16,6 +16,6 @@ pso:submitted a pso:PublicationStatus,
         pso:withStatus pso:submitted .
     """ ;
     rdfs:comment "The status of a work (for example a document or a dataset) that has been submitted for publication by the author to a publisher or a data repository, prior to its being accepted or rejected." ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

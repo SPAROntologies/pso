@@ -5,5 +5,5 @@
 part:Object a owl:Class ;
     rdfs:label "object"@en ;
     rdfs:comment "Any physical, social, or mental object, or substance."@en ;
-    rdfs:isDefinedBy part: .
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/participation.owl> .
 

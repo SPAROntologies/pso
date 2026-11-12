@@ -16,7 +16,7 @@ pso:holdsStatusInTime a owl:ObjectProperty ;
         pso:withStatus pso:corrected .
     """ ;
     rdfs:comment "The relation between a document, a dataset or some other thing and a status that it holds at a specific time."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     rdfs:range pso:StatusInTime ;
     rdfs:subPropertyOf tvc:hasValue ;
     vs:term_status reg:statusStable .

@@ -17,7 +17,7 @@ pso:isAcquiredAsConsequenceOf a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between a particular publishing status and the event that causes its acquisition."@en ;
     rdfs:domain pso:StatusInTime ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     rdfs:range part:Event ;
     rdfs:subPropertyOf tvc:withinContext ;
     vs:term_status reg:statusStable .

@@ -16,6 +16,6 @@ pso:APC-partially-waived a pso:ArticleProcessingChargeStatus,
         pso:withStatus pso:APC-partially-waived .
     """ ;
     rdfs:comment "The status of an article for which payment of the article processing charge has been partially waived by the publisher."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

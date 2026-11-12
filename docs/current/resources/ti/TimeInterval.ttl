@@ -5,5 +5,5 @@
 ti:TimeInterval a owl:Class ;
     rdfs:label "time interval"@en ;
     rdfs:comment "Two (starting and ending) points in time that define a particular period of time." ;
-    rdfs:isDefinedBy ti: .
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> .
 

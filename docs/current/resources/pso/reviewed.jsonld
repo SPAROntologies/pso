@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/pso/reviewed",
     "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/pso/PublicationStatus"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -18,7 +18,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/pso/"
+        "@id": "http://purl.org/spar/pso"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [

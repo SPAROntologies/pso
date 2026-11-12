@@ -5,5 +5,5 @@
 foaf:Document a owl:Class ;
     rdfs:label "document"@en ;
     rdfs:comment "An abstract class defining any kinds of publishing work." ;
-    rdfs:isDefinedBy foaf: .
+    rdfs:isDefinedBy <http://xmlns.com/foaf/0.1> .
 

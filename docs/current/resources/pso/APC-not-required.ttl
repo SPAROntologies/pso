@@ -16,6 +16,6 @@ pso:APC-not-required a pso:ArticleProcessingChargeStatus,
         pso:withStatus pso:APC-not-required .
     """ ;
     rdfs:comment "The status of an article for which an article processing charge is not required by the publisher."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

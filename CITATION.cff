@@ -18,14 +18,16 @@ repository-code: 'https://github.com/SPAROntologies/pso'
 url: 'http://www.sparontologies.net/ontologies/pso'
 abstract: The Publishing Status Ontology (PSO) is an ontology designed to characterise the publication status of documents at each stage of the publishing process (draft, submitted, under review, etc.).
 keywords:
+- SPAR Ontologies
+- OWL ontology
 - publishing statuses
 - bibliometrics
-- scholarly publishing
+- scholarly communication
 - scientometrics
 - semantic publishing
 license: CC-BY-4.0
-version: 1.8.2
-date-released: '2026-10-05'
+version: 1.8.3
+date-released: '2026-11-12'
 preferred-citation:
   type: conference-paper
   authors:
