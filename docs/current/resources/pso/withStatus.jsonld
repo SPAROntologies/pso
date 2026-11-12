@@ -12,7 +12,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The relation between the holding of a status and a document, a dataset or something else at a specific time to the definition of that status."
+        "@value": "The relation between the holding of a status to a document, a dataset or something else at a specific time and the definition of that status."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
@@ -29,6 +29,11 @@
       {
         "@language": "en",
         "@value": "with status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/pso/Status"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [

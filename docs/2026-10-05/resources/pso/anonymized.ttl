@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+pso:anonymized a pso:PublicationStatus,
+        owl:NamedIndividual ;
+    rdfs:label "anonymized"@en ;
+    vann:example """
+    :my-article
+        pso:holdsStatusInTime :my-article-status .
+
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:anonymized .
+    """ ;
+    rdfs:comment "The status of a document or dataset that has been subjected to anonymization, so that individual persons, for example the authors and/or people that are the subjects described in the document or dataset, cannot be identified."@en ;
+    rdfs:isDefinedBy pso: ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,52 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix part: <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pso:StatusInTime a owl:Class ;
+    rdfs:label "status in time"@en ;
+    vann:example """
+    :my-article
+        pso:holdsStatusInTime :my-article-status .
+
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:corrected .
+    """ ;
+    rdfs:comment "A particular situation that describe a state or condition some documents may have at a particular time as consequence of one or more events."@en ;
+    rdfs:isDefinedBy pso: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty pso:isAcquiredAsConsequenceOf ;
+            owl:someValuesFrom part:Event ],
+        [ a owl:Restriction ;
+            owl:onProperty tvc:atTime ;
+            owl:someValuesFrom ti:TimeInterval ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( ti:TimeInterval [ a owl:Restriction ;
+                                owl:allValuesFrom xsd:dateTime ;
+                                owl:onProperty ti:hasIntervalDate ] ) ] ;
+            owl:onProperty tvc:atTime ],
+        [ a owl:Restriction ;
+            owl:onProperty pso:withStatus ;
+            owl:someValuesFrom pso:Status ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty pso:isStatusHeldBy ],
+        tvc:ValueInTime ;
+    vs:term_status reg:statusStable ;
+    skos1:note """
+A status in time describes always:
+- a particular status S;
+- a particular document D holding S;
+- a particular time interval T in which D holds S;
+- a particular event that causes the acquisition of S by D.
+"""@en .
+

@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+pso:withdrawn-from-submission a pso:PublicationStatus,
+        owl:NamedIndividual ;
+    rdfs:label "withdrawn from submission"@en ;
+    vann:example """
+    :my-article
+        pso:holdsStatusInTime :my-article-status .
+
+    :my-article-status a pso:StatusInTime ;
+        pso:withStatus pso:withdrawn-from-submission .
+    """ ;
+    rdfs:comment "The status of a work (for example a pre-publication document or dataset) that has been voluntarily withdrawn by the author, having previously been submitted for publication, perhaps because the revisions requested by the peer-reviewers were considered impossible to achieve, or because the author wishes to submit it for publication elsewhere." ;
+    rdfs:isDefinedBy pso: ;
+    vs:term_status reg:statusStable .
+
