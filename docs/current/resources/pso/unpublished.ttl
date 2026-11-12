@@ -16,6 +16,6 @@ pso:unpublished a pso:PublicationStatus,
         pso:withStatus pso:unpublished .
     """ ;
     rdfs:comment "The status of a work (for example a document or a dataset) that has not been published by the author, a publisher or a data repository." ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

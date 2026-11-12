@@ -5,5 +5,5 @@
 ti:hasIntervalStartDate a owl:DatatypeProperty ;
     rdfs:label "has interval start date"@en ;
     rdfs:comment "The start date of a time interval" ;
-    rdfs:isDefinedBy ti: .
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> .
 

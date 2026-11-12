@@ -16,6 +16,6 @@ pso:enhanced a pso:PublicationStatus,
         pso:withStatus pso:enhanced .
     """ ;
     rdfs:comment "The status of a work (for example a document or a dataset) that has been updated or enhanced, for example by the provision of additional or supplementary material." ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

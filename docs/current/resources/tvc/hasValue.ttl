@@ -6,7 +6,7 @@
 tvc:hasValue a owl:ObjectProperty ;
     rdfs:label "has value"@en ;
     rdfs:comment "The relation between an entity and a value in time situation."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> ;
     rdfs:range tvc:ValueInTime ;
     rdfs:subPropertyOf tisit:hasTimeIndexedSetting .
 

@@ -5,6 +5,6 @@
 tisit:hasTimeIndexedSetting a owl:ObjectProperty ;
     rdfs:label "has time indexed setting"@en ;
     rdfs:comment "The relation between an entity and a time-indexed situation it is involved in."@en ;
-    rdfs:isDefinedBy tisit: ;
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> ;
     rdfs:range tisit:TimeIndexedSituation .
 

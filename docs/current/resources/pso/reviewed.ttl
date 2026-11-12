@@ -16,7 +16,7 @@ pso:reviewed a pso:PublicationStatus,
         pso:withStatus pso:reviewed .
     """ ;
     rdfs:comment "The status of a published work, for example a book or a journal article, that has been subjected to a written review giving critical analysis of its content, scope and quality.  [See also pso:peer-reviewed.]"@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     rdfs:seeAlso pso:peer-reviewed ;
     vs:term_status reg:statusStable .
 

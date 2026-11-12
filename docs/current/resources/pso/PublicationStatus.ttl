@@ -17,7 +17,7 @@ pso:PublicationStatus a owl:Class ;
     pso:corrected a pso:PublicationStatus .
     """ ;
     rdfs:comment "A state or condition that a document may have that relates to the publication of such document."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     rdfs:subClassOf pso:Status ;
     vs:term_status reg:statusStable .
 

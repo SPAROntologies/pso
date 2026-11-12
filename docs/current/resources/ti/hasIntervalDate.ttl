@@ -6,5 +6,5 @@ ti:hasIntervalDate a owl:DatatypeProperty ;
     rdfs:label "has interval date"@en ;
     rdfs:comment "A date value assigned to a time interval."@en ;
     rdfs:domain ti:TimeInterval ;
-    rdfs:isDefinedBy ti: .
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> .
 

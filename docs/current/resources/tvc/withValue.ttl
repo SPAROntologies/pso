@@ -6,7 +6,7 @@
 tvc:withValue a owl:ObjectProperty ;
     rdfs:label "with value"@en ;
     rdfs:comment "The relation between the value in time situation and the actual value held by the entity partaking in that situation."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> ;
     rdfs:range tvc:ValueInTime ;
     rdfs:subPropertyOf tisit:forEntity .
 

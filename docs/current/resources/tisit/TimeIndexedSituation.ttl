@@ -5,5 +5,5 @@
 tisit:TimeIndexedSituation a owl:Class ;
     rdfs:label "time indexed situation"@en ;
     rdfs:comment "A situation that is explicitly indexed at some time for at least one entity." ;
-    rdfs:isDefinedBy tisit: .
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> .
 

@@ -16,6 +16,6 @@ pso:version-of-record a pso:PublicationStatus,
         pso:withStatus pso:version-of-record .
     """ ;
     rdfs:comment "The final version of a document that has been formally published as a peer-reviewed journal article, citable via a permanent identifier, and forming an abiding component of the scholarly record." ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

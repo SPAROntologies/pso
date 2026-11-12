@@ -16,6 +16,6 @@ pso:accepted-for-publication a pso:PublicationStatus,
         pso:withStatus pso:accepted-for-publication .
     """ ;
     rdfs:comment "The status of a work (for example a document or a dataset) once it has been accepted for publication by a publisher or data repository."@en ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

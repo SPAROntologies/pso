@@ -16,6 +16,6 @@ pso:final-draft a pso:PublicationStatus,
         pso:withStatus pso:final-draft .
     """ ;
     rdfs:comment "The status of a pre-publication work (for example a document or a dataset) when in the authors' opinion it has been brought to a stage of development that renders it suitable for publication." ;
-    rdfs:isDefinedBy pso: ;
+    rdfs:isDefinedBy <http://purl.org/spar/pso> ;
     vs:term_status reg:statusStable .
 

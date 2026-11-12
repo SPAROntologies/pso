@@ -5,5 +5,5 @@
 part:Event a owl:Class ;
     rdfs:label "event"@en ;
     rdfs:comment "An event that may happen during a publishing process, such as writing a draft, sending a preprint, publishing a paper, etc." ;
-    rdfs:isDefinedBy part: .
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/participation.owl> .
 
