@@ -8,7 +8,8 @@
   <rdf:Description rdf:about="http://purl.org/spar/pso/version-of-record">
     <rdf:type rdf:resource="http://purl.org/spar/pso/PublicationStatus"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:label xml:lang="en">version of record</rdfs:label>
+    <rdfs:comment>The final version of a document that has been formally published as a peer-reviewed journal article, citable via a permanent identifier, and forming an abiding component of the scholarly record.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso/"/>
     <vann:example>
     :my-article
@@ -17,7 +18,6 @@
     :my-article-status a pso:StatusInTime ;
         pso:withStatus pso:version-of-record .
     </vann:example>
-    <rdfs:comment>The final version of a document that has been formally published as a peer-reviewed journal article, citable via a permanent identifier, and forming an abiding component of the scholarly record.</rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">version of record</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -28,22 +28,22 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb9"
+      },
+      {
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb3"
+      },
+      {
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb1"
+      },
+      {
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb8"
+      },
+      {
         "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
       },
       {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb2"
-      },
-      {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb3"
-      },
-      {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb8"
-      },
-      {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb1"
-      },
-      {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb9"
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb2"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -59,29 +59,30 @@
     ]
   },
   {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb2",
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb9",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2002/07/owl#cardinality": [
       {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/atTime"
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+        "@id": "http://purl.org/spar/pso/isStatusHeldBy"
       }
     ]
   },
   {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb3",
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb3",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb4"
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb4"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
@@ -91,7 +92,7 @@
     ]
   },
   {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb4",
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb4",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -102,14 +103,14 @@
             "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
           },
           {
-            "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb5"
+            "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb5"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb5",
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb5",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -125,23 +126,7 @@
     ]
   },
   {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb8",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/spar/pso/withStatus"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://purl.org/spar/pso/Status"
-      }
-    ]
-  },
-  {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb1",
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -157,19 +142,34 @@
     ]
   },
   {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb9",
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb8",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#cardinality": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
+        "@id": "http://purl.org/spar/pso/withStatus"
       }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/pso/Status"
+      }
+    ]
+  },
+  {
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://purl.org/spar/pso/isStatusHeldBy"
+        "@id": "http://www.essepuntato.it/2012/04/tvc/atTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
       }
     ]
   }

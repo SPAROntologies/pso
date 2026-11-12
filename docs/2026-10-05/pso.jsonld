@@ -1,607 +1,5 @@
 [
   {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between an entity and a time-indexed situation it is involved in."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "has time indexed setting"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Two (starting and ending) points in time that define a particular period of time."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "time interval"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.essepuntato.it/2012/04/tvc/atTime",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The particular temporal instant or time period in which the situation takes place."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/tvc/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "at time"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/isStatusIn",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    pso:under-review pso:isStatusIn :my-article-status .\n\n    :my-article-status a pso:StatusInTime .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between the definition of a specific status and the situation of the document, a dataset or something else holding that status at a specific time."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "is status in"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://purl.org/spar/pso/StatusInTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://purl.org/spar/pso/withStatus"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/holdsStatusInTime",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between a document, a dataset or some other thing and a status that it holds at a specific time."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "holds status in time"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://purl.org/spar/pso/StatusInTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/hasValue"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://xmlns.com/foaf/0.1/Agent",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "An agent (eg. person, group, software or physical artifact)."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://xmlns.com/foaf/0.1/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "agent"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/PublicationStatus",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n\n    pso:corrected a pso:PublicationStatus .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "A state or condition that a document may have that relates to the publication of such document."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "publishing status"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://purl.org/spar/pso/Status"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/APC-partially-waived",
-    "@type": [
-      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-partially-waived .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The status of an article for which payment of the article processing charge has been partially waived by the publisher."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "APC partially waived"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/subscription-access",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:subscription-access .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a published work, typically an article in a journal issue, that is not available to read without payment of an article access fee or a journal subscription fee for that publication."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "subscription access"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/retracted-from-publication",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:retracted-from-publication .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a publication that has been subsequently retracted by the publisher, for example because it was subsequently found to contain erroneous or fraudulent information."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "retracted from publication"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/under-review",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:under-review .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a document that has been received from the author(s) by an editor or a publisher for potential publication, and then has been sent to independent reviewers for their comments as to its suitability for publication, prior to receipt of such reviews."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "under review"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/initial-draft",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:initial-draft .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a pre-publication work (for example a document or a dataset) when in its initial stage of development."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "initial draft"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/anonymized",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:anonymized .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The status of a document or dataset that has been subjected to anonymization, so that individual persons, for example the authors and/or people that are the subjects described in the document or dataset, cannot be identified."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "anonymized"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.essepuntato.it/2012/04/tvc/withinContext",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The specific context within which the fact of the entity having the value is relevant."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/tvc/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "within context"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity"
-      }
-    ]
-  },
-  {
-    "@id": "http://xmlns.com/foaf/0.1/Document",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "An abstract class defining any kinds of publishing work."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://xmlns.com/foaf/0.1/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "document"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/rejected-for-publication",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:rejected-for-publication .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of material (for example a document or a dataset) after it has been rejected for publication by a publisher or data repository."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "rejected for publication"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/green-open-access",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:green-open-access .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a published work made available by the author, by self-archiving a version of the work for free and open public use in their institutional repository, in a central repository, or elsewhere, in parallel with publication of a subscription-access Version of Record of the work by a publisher.  The green open-access version of the work may be a preprint (the version of the article as first submitted for publication) or a postprint (the pre-publication version of the article after incorporation of authors’ responses to peer reviewers’ comments).  Its availability may have an embargo restriction imposed by the publisher of the subscription-access version of the work, that prevents the green open-access version from being freely available until some substantial time after publication of the subscription-access journal issue containing that article.  A green open-access work should be accompanied by a license explicitly defining usage rights, for example a Creative Commons Attribution License.  [See also: pso:open-access, pso:gratis-open-access, pso:libre-open-access, pso:gold-open-access, pso:embargoed and pso:subscription-access.]"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "green open access"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/gold-open-access",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:gold-open-access .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a published work, typically a journal article, made available by the publisher on the publisher's own web site for third parties to read without payment of access or subscription fees.  Gold open access has the benefit that the article is findable where you expect it to be, but licensing restrictions may limit the possibilities for downloading, text mining, modification, re-publication or reuse of the published work.  Gold open-access publication typically involves payment by the author or his/her institution to the publisher of an article processing charge (aka an author publishing charge).  [See also: pso:open-access, pso:gratis-open-access, pso:libre-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "gold open access"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
     "@id": "http://purl.org/spar/pso/gratis-open-access",
     "@type": [
       "http://purl.org/spar/pso/PublicationStatus",
@@ -631,854 +29,6 @@
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/confidential",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:confidential .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a document containing information that must be kept confidential."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "confidential"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/Status",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n\n    pso:corrected a pso:Status .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "A state or condition that a document may have."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "status"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/2002/07/owl#Thing"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.essepuntato.it/2012/04/tvc/hasValue",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between an entity and a value in time situation."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/tvc/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "has value"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/isLostAsConsequenceOf",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:under-review ;\n        tvc:atTime :my-status-time ;\n        pso:isLostAsConsequenceOf :my-another-event .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between a particular publishing status and the event that causes its loss."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://purl.org/spar/pso/StatusInTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "is lost as consequence of"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/withinContext"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Any physical, social, or mental object, or substance."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "object"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/final-draft",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:final-draft .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a pre-publication work (for example a document or a dataset) when in the authors' opinion it has been brought to a stage of development that renders it suitable for publication."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "final draft"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/APC-paid",
-    "@type": [
-      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-paid .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The status of an article for which the article processing charge has been paid to the publisher by the author or his/her institution."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "APC paid"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/StatusInTime",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "A particular situation that describe a state or condition some documents may have at a particular time as consequence of one or more events."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "status in time"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb1"
-      },
-      {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb2"
-      },
-      {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb3"
-      },
-      {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb8"
-      },
-      {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb9"
-      },
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ],
-    "http://www.w3.org/2008/05/skos#note": [
-      {
-        "@language": "en",
-        "@value": "\nA status in time describes always:\n- a particular status S;\n- a particular document D holding S;\n- a particular time interval T in which D holds S;\n- a particular event that causes the acquisition of S by D.\n"
-      }
-    ]
-  },
-  {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb1",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/spar/pso/isAcquiredAsConsequenceOf"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
-      }
-    ]
-  },
-  {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb2",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/atTime"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
-      }
-    ]
-  },
-  {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb3",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb4"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/atTime"
-      }
-    ]
-  },
-  {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb4",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
-          },
-          {
-            "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb5"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb5",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate"
-      }
-    ]
-  },
-  {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb8",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/spar/pso/withStatus"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://purl.org/spar/pso/Status"
-      }
-    ]
-  },
-  {
-    "@id": "_:n2624ae3ba66f4ed689ae973dbe46982fb9",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#cardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/spar/pso/isStatusHeldBy"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/in-press",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:is-press .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a document after it has been accepted for publication and prior to its formal publication in print.  (Note that for many journal articles that are published electronically, this status rarely exists, since there is commonly no delay between acceptance and publication.)"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "in press"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/APC-not-charged",
-    "@type": [
-      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-not-charged .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The status of an article for which an article processing charge is not charged by the publisher."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "APC not charged"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/catalogued",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:catalogued .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a work (for example a document or a dataset) concerning which metadata has been stored in a physical or electronic catalogue."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "catalogued"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/version-of-record",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:version-of-record .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The final version of a document that has been formally published as a peer-reviewed journal article, citable via a permanent identifier, and forming an abiding component of the scholarly record."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "version of record"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/resultsInLosing",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:under-review ;\n        tvc:atTime :my-status-time .\n\n    :my-another-event  \n        pso:resultsInLosing :my-article-status .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between an event and the consequential loss of a particular publishing status."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "results in losing"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://purl.org/spar/pso/isLostAsConsequenceOf"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#FunctionalProperty",
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A time interval during which something is happening."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "at time"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/open-access",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:open-access .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a published work (typically a scholarly publication or a dataset) that is freely available via the Internet for third parties to read without payment of access or subscription fees, and (in the case of a work published under a full open-access license) that is freely available to download and reuse for any purposes including commercial ones, including modification of the original work, its integration with other material, and its re-publication, subject typically to a requirement that the original authors and the source of the original work are acknowledged in compliance with scholarly citation norms. [See also: pso:gratis-open-access, pso:libre-open-access, pso:gold-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "open access"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/intermediate-draft",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:intermediate-draft .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a pre-publication work (for example a document or a dataset) part-way through its development."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "intermediate draft"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/submitted",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:submitted .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a work (for example a document or a dataset) that has been submitted for publication by the author to a publisher or a data repository, prior to its being accepted or rejected."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "submitted"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/published",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:published .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of material (for example a document or a dataset) that has been published, i.e. made available for people to access, read or use, either freely or for a purchase price or an access fee."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "published"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/2002/07/owl#versionInfo",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/APC-fully-waived",
-    "@type": [
-      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-fully-waived .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The status of an article for which payment of the article processing charge has been fully waived by the publisher."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "APC fully waived"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/embargoed",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:embargoed .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "\nThe status of a work that is subjected to an embargo, which means that the work cannot be published, or in the case of a press release that it cannot be reported on, until a particular date known as the embargo date. \nFor open-access journal articles, an embargoed article is one in which availability of the open-access version of the article is delayed by the publisher for a substantial embargo period, typically of six or twelve months, after subscription-access availability of the published work.  \n"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "embargoed"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "An event that may happen during a publishing process, such as writing a draft, sending a preprint, publishing a paper, etc."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "event"
       }
     ]
   },
@@ -1531,41 +81,43 @@
     ]
   },
   {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate",
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "The start date of a time interval"
+        "@value": "A time interval during which something is happening."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "has interval start date"
+        "@value": "at time"
       }
     ]
   },
   {
-    "@id": "http://purl.org/spar/pso/closed-access",
+    "@id": "http://purl.org/spar/pso/APC-paid",
     "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
+      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
       "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:closed-access .\n    "
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-paid .\n    "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "The status of a work (typically a private or secret paper or a confidential dataset) that is typically held unpublished in a 'dark' archive whose existence is unknown by the wider world, and that is only available to the owner or copyright holder of the asset."
+        "@language": "en",
+        "@value": "The status of an article for which the article processing charge has been paid to the publisher by the author or his/her institution."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -1576,7 +128,499 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "closed access"
+        "@value": "APC paid"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-event \n        part:hasParticipant :my-agent .\n\n    :my-agent a pso:Agent ;\n        foaf:name 'John Doe' .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An entity, such as a person, a group, an organization or a software agent, involved in one or more events."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
+      },
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/rejected-for-publication",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:rejected-for-publication .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of material (for example a document or a dataset) after it has been rejected for publication by a publisher or data repository."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "rejected for publication"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A date value assigned to a time interval."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has interval date"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between an entity and a time-indexed situation it is involved in."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has time indexed setting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/reviewed",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:reviewed .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The status of a published work, for example a book or a journal article, that has been subjected to a written review giving critical analysis of its content, scope and quality.  [See also pso:peer-reviewed.]"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "reviewed"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.org/spar/pso/peer-reviewed"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/proof",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:proof .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The status of a pre-publication document late in the publication process, once it has been accepted for publication by a publisher, after the inclusion of any author corrections required by the editor following peer-review, following copy editing and formatting to bring the manuscript into the house style, and prior to final checking by the editor, proof-reader and author to detect and eliminate any errors prior to publication."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "proof"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://purl.org/spar/pso/corrected"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/StatusInTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A particular situation that describe a state or condition some documents may have at a particular time as consequence of one or more events."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "status in time"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb1"
+      },
+      {
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb2"
+      },
+      {
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb3"
+      },
+      {
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb8"
+      },
+      {
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb9"
+      },
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2008/05/skos#note": [
+      {
+        "@language": "en",
+        "@value": "\nA status in time describes always:\n- a particular status S;\n- a particular document D holding S;\n- a particular time interval T in which D holds S;\n- a particular event that causes the acquisition of S by D.\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/pso/isAcquiredAsConsequenceOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
+      }
+    ]
+  },
+  {
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/atTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+      }
+    ]
+  },
+  {
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb4"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/atTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+          },
+          {
+            "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate"
+      }
+    ]
+  },
+  {
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/pso/withStatus"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/pso/Status"
+      }
+    ]
+  },
+  {
+    "@id": "_:n434eb6a68ece49ebbdc47d636d73fc9cb9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/pso/isStatusHeldBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/date",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.essepuntato.it/2012/04/tvc/hasValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between an entity and a value in time situation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/tvc/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has value"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/PublicationStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n\n    pso:corrected a pso:PublicationStatus .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A state or condition that a document may have that relates to the publication of such document."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "publishing status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/pso/Status"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/libre-open-access",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:libre-open-access .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a published work which is both free to read on-line, and to which additional usage rights apply, for example the right to text mine, make derivative works, reuse and re-publish the published work, such rights frequently being defined by application of an explicit license such as a Creative Commons license.  [See also: pso:open-access, pso:gratis-open-access, pso:gold-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "libre open access"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -1619,19 +663,19 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/pso/restricted-access",
+    "@id": "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
     "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/vocab/vann/example": [
       {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:restricted-access .\n    "
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-fully-waived .\n\n    pso:APC-fully-waived a pso:ArticleProcessingChargeStatus .\n    "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "The status of a work (typically a scholarly paper or a dataset) to which access is restricted.  For example, confidential information to which access is made available only to those who have been approved by the owner or copyright holder of the asset after personal application, or to those with appropriate security clearance, or to those within a partnership."
+        "@language": "en",
+        "@value": "A state or condition that a document may have that relates to a fee levied by a publisher on an author or an institution to cover the cost of publishing an Open Access journal article."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -1642,7 +686,12 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "restricted access"
+        "@value": "article processing charge status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/pso/Status"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -1652,19 +701,554 @@
     ]
   },
   {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate",
+    "@id": "http://purl.org/spar/pso/closed-access",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:closed-access .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a work (typically a private or secret paper or a confidential dataset) that is typically held unpublished in a 'dark' archive whose existence is unknown by the wider world, and that is only available to the owner or copyright holder of the asset."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "closed access"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A date value assigned to a time interval."
+        "@value": "The relation between a time-indexed situation and an entity involved in it."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "for entity"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Any physical, social, or mental object, or substance."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "object"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/version-of-record",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:version-of-record .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The final version of a document that has been formally published as a peer-reviewed journal article, citable via a permanent identifier, and forming an abiding component of the scholarly record."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "version of record"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Document",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An abstract class defining any kinds of publishing work."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "document"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/withdrawn-from-submission",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:withdrawn-from-submission .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a work (for example a pre-publication document or dataset) that has been voluntarily withdrawn by the author, having previously been submitted for publication, perhaps because the revisions requested by the peer-reviewers were considered impossible to achieve, or because the author wishes to submit it for publication elsewhere."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "withdrawn from submission"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/final-draft",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:final-draft .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a pre-publication work (for example a document or a dataset) when in the authors' opinion it has been brought to a stage of development that renders it suitable for publication."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "final draft"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/subscription-access",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:subscription-access .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a published work, typically an article in a journal issue, that is not available to read without payment of an article access fee or a journal subscription fee for that publication."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "subscription access"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/embargoed",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:embargoed .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "\nThe status of a work that is subjected to an embargo, which means that the work cannot be published, or in the case of a press release that it cannot be reported on, until a particular date known as the embargo date. \nFor open-access journal articles, an embargoed article is one in which availability of the open-access version of the article is delayed by the publisher for a substantial embargo period, typically of six or twelve months, after subscription-access availability of the published work.  \n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "embargoed"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/retracted-from-publication",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:retracted-from-publication .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a publication that has been subsequently retracted by the publisher, for example because it was subsequently found to contain erroneous or fraudulent information."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "retracted from publication"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/Status",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n\n    pso:corrected a pso:Status .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A state or condition that a document may have."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An agent (eg. person, group, software or physical artifact)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/under-review",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:under-review .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a document that has been received from the author(s) by an editor or a publisher for potential publication, and then has been sent to independent reviewers for their comments as to its suitability for publication, prior to receipt of such reviews."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "under review"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.essepuntato.it/2012/04/tvc/withValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between the value in time situation and the actual value held by the entity partaking in that situation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/tvc/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "with value"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/accepted-for-publication",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:accepted-for-publication .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The status of a work (for example a document or a dataset) once it has been accepted for publication by a publisher or data repository."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "accepted for publication"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A situation that is explicitly indexed at some time for at least one entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "time indexed situation"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/isAcquiredAsConsequenceOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:under-review ;\n        tvc:atTime :my-status-time ;\n        pso:isAcquiredAsConsequenceOf :my-event .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between a particular publishing status and the event that causes its acquisition."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/pso/StatusInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is acquired as consequence of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/withinContext"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Two (starting and ending) points in time that define a particular period of time."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -1675,7 +1259,1052 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "has interval date"
+        "@value": "time interval"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/anonymized",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:anonymized .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The status of a document or dataset that has been subjected to anonymization, so that individual persons, for example the authors and/or people that are the subjects described in the document or dataset, cannot be identified."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "anonymized"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/gold-open-access",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:gold-open-access .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a published work, typically a journal article, made available by the publisher on the publisher's own web site for third parties to read without payment of access or subscription fees.  Gold open access has the benefit that the article is findable where you expect it to be, but licensing restrictions may limit the possibilities for downloading, text mining, modification, re-publication or reuse of the published work.  Gold open-access publication typically involves payment by the author or his/her institution to the publisher of an article processing charge (aka an author publishing charge).  [See also: pso:open-access, pso:gratis-open-access, pso:libre-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "gold open access"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/intermediate-draft",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:intermediate-draft .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a pre-publication work (for example a document or a dataset) part-way through its development."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "intermediate draft"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/green-open-access",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:green-open-access .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a published work made available by the author, by self-archiving a version of the work for free and open public use in their institutional repository, in a central repository, or elsewhere, in parallel with publication of a subscription-access Version of Record of the work by a publisher.  The green open-access version of the work may be a preprint (the version of the article as first submitted for publication) or a postprint (the pre-publication version of the article after incorporation of authors’ responses to peer reviewers’ comments).  Its availability may have an embargo restriction imposed by the publisher of the subscription-access version of the work, that prevents the green open-access version from being freely available until some substantial time after publication of the subscription-access journal issue containing that article.  A green open-access work should be accompanied by a license explicitly defining usage rights, for example a Creative Commons Attribution License.  [See also: pso:open-access, pso:gratis-open-access, pso:libre-open-access, pso:gold-open-access, pso:embargoed and pso:subscription-access.]"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "green open access"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/APC-partially-waived",
+    "@type": [
+      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-partially-waived .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The status of an article for which payment of the article processing charge has been partially waived by the publisher."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "APC partially waived"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An event that may happen during a publishing process, such as writing a draft, sending a preprint, publishing a paper, etc."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "event"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/withStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between the holding of a status to a document, a dataset or something else at a specific time and the definition of that status."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/pso/StatusInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "with status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/pso/Status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/withValue"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/isLostAsConsequenceOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:under-review ;\n        tvc:atTime :my-status-time ;\n        pso:isLostAsConsequenceOf :my-another-event .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between a particular publishing status and the event that causes its loss."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/pso/StatusInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is lost as consequence of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/withinContext"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/resultsInLosing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:under-review ;\n        tvc:atTime :my-status-time .\n\n    :my-another-event  \n        pso:resultsInLosing :my-article-status .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between an event and the consequential loss of a particular publishing status."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "results in losing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/pso/isLostAsConsequenceOf"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/rights",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/non-confidential",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:non-confidential .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a document containing information that may be shared publicly."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "non-confidential"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.essepuntato.it/2012/04/tvc/atTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The particular temporal instant or time period in which the situation takes place."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/tvc/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "at time"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.essepuntato.it/2012/04/tvc/withinContext",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The specific context within which the fact of the entity having the value is relevant."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/tvc/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "within context"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/submitted",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:submitted .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a work (for example a document or a dataset) that has been submitted for publication by the author to a publisher or a data repository, prior to its being accepted or rejected."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "submitted"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/in-press",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:is-press .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a document after it has been accepted for publication and prior to its formal publication in print.  (Note that for many journal articles that are published electronically, this status rarely exists, since there is commonly no delay between acceptance and publication.)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "in press"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The end date of a time interval"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has interval end date"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/draft",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:draft .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a work (for example a document or a dataset) prior to completion and publication."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "draft"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/APC-not-required",
+    "@type": [
+      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-not-required .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The status of an article for which an article processing charge is not required by the publisher."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "APC not required"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/initial-draft",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:initial-draft .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a pre-publication work (for example a document or a dataset) when in its initial stage of development."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "initial draft"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/open-access",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:open-access .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a published work (typically a scholarly publication or a dataset) that is freely available via the Internet for third parties to read without payment of access or subscription fees, and (in the case of a work published under a full open-access license) that is freely available to download and reuse for any purposes including commercial ones, including modification of the original work, its integration with other material, and its re-publication, subject typically to a requirement that the original authors and the source of the original work are acknowledged in compliance with scholarly citation norms. [See also: pso:gratis-open-access, pso:libre-open-access, pso:gold-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "open access"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/holdsStatusInTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between a document, a dataset or some other thing and a status that it holds at a specific time."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "holds status in time"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/pso/StatusInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/hasValue"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/published",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:published .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of material (for example a document or a dataset) that has been published, i.e. made available for people to access, read or use, either freely or for a purchase price or an access fee."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "published"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/unpublished",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:unpublished .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a work (for example a document or a dataset) that has not been published by the author, a publisher or a data repository."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "unpublished"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/corrected",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a work (for example a document or a dataset) in which errors, that may have introduced by the author, by a publisher, or by some automated process, have been corrected."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "corrected"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/republished",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:republished .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a publication (for example a book) that has been republished in a different edition or in translation, or of a work (for example a journal article or a poem) that is republished as part of a collection or an anthology, or of material (for example a figure from an existing publication) that is republished as part of a quite different publication.  Where the publisher of the new work is different from the original publisher, such republication typically includes an acknowledgement of the source and copyright of the original material, and is undertaken after obtaining permission of the original copyright holder."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "republished"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/APC-not-charged",
+    "@type": [
+      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-not-charged .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The status of an article for which an article processing charge is not charged by the publisher."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "APC not charged"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/resultsInAcquiring",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:under-review ;\n        tvc:atTime :my-status-time .\n\n    :my-event  \n        pso:resultsInAcquiring :my-article-status .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between an event and the consequential acquisition of a particular publishing status."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "results in acquiring"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/pso/isAcquiredAsConsequenceOf"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/archived",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:archived .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of a work (for example a document or a dataset) that has been saved for long-term preservation in a physical or electronic archive."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "archived"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/isStatusIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    pso:under-review pso:isStatusIn :my-article-status .\n\n    :my-article-status a pso:StatusInTime .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation between the definition of a specific status and the situation of the document, a dataset or something else holding that status at a specific time."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is status in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/pso/StatusInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/pso/withStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pso/revised",
+    "@type": [
+      "http://purl.org/spar/pso/PublicationStatus",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:revised .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The status of s work (for example a document or a dataset) that has been altered or improved, typically by the original author."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pso/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "revised"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
       }
     ]
   },
@@ -1880,129 +2509,6 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/pso/resultsInAcquiring",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:under-review ;\n        tvc:atTime :my-status-time .\n\n    :my-event  \n        pso:resultsInAcquiring :my-article-status .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between an event and the consequential acquisition of a particular publishing status."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "results in acquiring"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://purl.org/spar/pso/isAcquiredAsConsequenceOf"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/archived",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:archived .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a work (for example a document or a dataset) that has been saved for long-term preservation in a physical or electronic archive."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "archived"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/description",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/Agent",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-event \n        part:hasParticipant :my-agent .\n\n    :my-agent a pso:Agent ;\n        foaf:name 'John Doe' .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "An entity, such as a person, a group, an organization or a software agent, involved in one or more events."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "agent"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"
-      },
-      {
-        "@id": "http://xmlns.com/foaf/0.1/Agent"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
     "@id": "http://purl.org/spar/pso/peer-reviewed",
     "@type": [
       "http://purl.org/spar/pso/PublicationStatus",
@@ -2042,103 +2548,19 @@
     ]
   },
   {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between a time-indexed situation and an entity involved in it."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "for entity"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A situation that is explicitly indexed at some time for at least one entity."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "time indexed situation"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.essepuntato.it/2012/04/tvc/withValue",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between the value in time situation and the actual value held by the entity partaking in that situation."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/tvc/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "with value"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/accepted-for-publication",
+    "@id": "http://purl.org/spar/pso/restricted-access",
     "@type": [
       "http://purl.org/spar/pso/PublicationStatus",
       "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:accepted-for-publication .\n    "
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:restricted-access .\n    "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@language": "en",
-        "@value": "The status of a work (for example a document or a dataset) once it has been accepted for publication by a publisher or data repository."
+        "@value": "The status of a work (typically a scholarly paper or a dataset) to which access is restricted.  For example, confidential information to which access is made available only to those who have been approved by the owner or copyright holder of the asset after personal application, or to those with appropriate security clearance, or to those within a partnership."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -2149,7 +2571,7 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "accepted for publication"
+        "@value": "restricted access"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -2159,19 +2581,19 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/pso/draft",
+    "@id": "http://purl.org/spar/pso/catalogued",
     "@type": [
       "http://purl.org/spar/pso/PublicationStatus",
       "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:draft .\n    "
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:catalogued .\n    "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "The status of a work (for example a document or a dataset) prior to completion and publication."
+        "@value": "The status of a work (for example a document or a dataset) concerning which metadata has been stored in a physical or electronic catalogue."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -2182,95 +2604,7 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "draft"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The end date of a time interval"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "has interval end date"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/libre-open-access",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:libre-open-access .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a published work which is both free to read on-line, and to which additional usage rights apply, for example the right to text mine, make derivative works, reuse and re-publish the published work, such rights frequently being defined by application of an explicit license such as a Creative Commons license.  [See also: pso:open-access, pso:gratis-open-access, pso:gold-open-access, pso:green-open-access, pso:embargoed and pso:subscription-access.]"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "libre open access"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/withdrawn-from-submission",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:withdrawn-from-submission .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a work (for example a pre-publication document or dataset) that has been voluntarily withdrawn by the author, having previously been submitted for publication, perhaps because the revisions requested by the peer-reviewers were considered impossible to achieve, or because the author wishes to submit it for publication elsewhere."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "withdrawn from submission"
+        "@value": "catalogued"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -2313,297 +2647,6 @@
     ]
   },
   {
-    "@id": "http://purl.org/dc/elements/1.1/title",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-fully-waived .\n\n    pso:APC-fully-waived a pso:ArticleProcessingChargeStatus .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "A state or condition that a document may have that relates to a fee levied by a publisher on an author or an institution to cover the cost of publishing an Open Access journal article."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "article processing charge status"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://purl.org/spar/pso/Status"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/withStatus",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between the holding of a status to a document, a dataset or something else at a specific time and the definition of that status."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://purl.org/spar/pso/StatusInTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "with status"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://purl.org/spar/pso/Status"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/withValue"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/date",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/APC-not-required",
-    "@type": [
-      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-not-required .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The status of an article for which an article processing charge is not required by the publisher."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "APC not required"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/isAcquiredAsConsequenceOf",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:under-review ;\n        tvc:atTime :my-status-time ;\n        pso:isAcquiredAsConsequenceOf :my-event .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The relation between a particular publishing status and the event that causes its acquisition."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://purl.org/spar/pso/StatusInTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "is acquired as consequence of"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/withinContext"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/reviewed",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:reviewed .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The status of a published work, for example a book or a journal article, that has been subjected to a written review giving critical analysis of its content, scope and quality.  [See also pso:peer-reviewed.]"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "reviewed"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "http://purl.org/spar/pso/peer-reviewed"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/proof",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:proof .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The status of a pre-publication document late in the publication process, once it has been accepted for publication by a publisher, after the inclusion of any author corrections required by the editor following peer-review, following copy editing and formatting to bring the manuscript into the house style, and prior to final checking by the editor, proof-reader and author to detect and eliminate any errors prior to publication."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "proof"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "http://purl.org/spar/pso/corrected"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/non-confidential",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:non-confidential .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a document containing information that may be shared publicly."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "non-confidential"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
     "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -2632,19 +2675,19 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/pso/unpublished",
+    "@id": "http://purl.org/spar/pso/confidential",
     "@type": [
       "http://purl.org/spar/pso/PublicationStatus",
       "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:unpublished .\n    "
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:confidential .\n    "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "The status of a work (for example a document or a dataset) that has not been published by the author, a publisher or a data repository."
+        "@value": "The status of a document containing information that must be kept confidential."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -2655,7 +2698,7 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "unpublished"
+        "@value": "confidential"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -2665,25 +2708,48 @@
     ]
   },
   {
-    "@id": "http://purl.org/dc/elements/1.1/rights",
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The start date of a time interval"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has interval start date"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/title",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "http://purl.org/spar/pso/corrected",
+    "@id": "http://purl.org/spar/pso/APC-fully-waived",
     "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
+      "http://purl.org/spar/pso/ArticleProcessingChargeStatus",
       "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:corrected .\n    "
+        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:APC-fully-waived .\n    "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "The status of a work (for example a document or a dataset) in which errors, that may have introduced by the author, by a publisher, or by some automated process, have been corrected."
+        "@language": "en",
+        "@value": "The status of an article for which payment of the article processing charge has been fully waived by the publisher."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -2694,73 +2760,7 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "corrected"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/republished",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:republished .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of a publication (for example a book) that has been republished in a different edition or in translation, or of a work (for example a journal article or a poem) that is republished as part of a collection or an anthology, or of material (for example a figure from an existing publication) that is republished as part of a quite different publication.  Where the publisher of the new work is different from the original publisher, such republication typically includes an acknowledgement of the source and copyright of the original material, and is undertaken after obtaining permission of the original copyright holder."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "republished"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/pso/revised",
-    "@type": [
-      "http://purl.org/spar/pso/PublicationStatus",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-article\n        pso:holdsStatusInTime :my-article-status .\n\n    :my-article-status a pso:StatusInTime ;\n        pso:withStatus pso:revised .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The status of s work (for example a document or a dataset) that has been altered or improved, typically by the original author."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pso/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "revised"
+        "@value": "APC fully waived"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [

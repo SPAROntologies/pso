@@ -6,7 +6,7 @@
   <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation">
     <rdfs:label xml:lang="en">time indexed situation</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>A situation that is explicitly indexed at some time for at least one entity.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"/>
+    <rdfs:comment>A situation that is explicitly indexed at some time for at least one entity.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>
