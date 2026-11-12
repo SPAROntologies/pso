@@ -1,6 +1,6 @@
 [project]
 name = "pso"
-version = "1.8.2"
+version = "1.8.3"
 description = "The Publishing Status Ontology (PSO) is an ontology designed to characterise the publication status of documents at each stage of the publishing process (draft, submitted, under review, etc.)."
 readme = "README.md"
 requires-python = ">=3.13"
